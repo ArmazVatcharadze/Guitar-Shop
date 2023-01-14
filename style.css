@@ -1,0 +1,464 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;500;600&display=swap');
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1B1717 ;
+    overflow-x: hidden;
+    font-family: 'Lobster', cursive;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+header h1{
+    color: chocolate;
+}
+
+h1{
+    font-family: 'Lobster', cursive;
+}
+
+.main-img{
+    width: 100vw;
+    overflow: hidden;
+}
+.main-img img{
+    width: 100%;
+    max-height: 400px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.nav{
+    display: none;
+    justify-content: space-between;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100vw;
+}
+
+.nav-open{
+    display: flex;
+}
+
+.nav p {
+    cursor: pointer;
+}
+
+.quote{
+    display: flex;
+    color: chocolate;
+    justify-content:center;
+}
+
+.list{
+    margin-top: 30px;
+    padding: 10px;
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.list img{
+    max-width: 350px;
+    cursor: pointer;
+}
+
+.list div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list h2 {
+    position: absolute;
+    color: chocolate;
+    border: 2px solid chocolate;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.list h2:hover{
+    color: white;
+    border: 2px solid white;
+    transition: .5s;
+}
+
+.card-outer {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-slider {
+    display: flex;
+    width: 100%;
+    position: relative;
+    animation: slide 20s infinite;
+}
+
+.card {
+    width: 177px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.card-img img {
+    width: 180px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.info p{
+    cursor: pointer;
+}
+
+.card-img {
+    overflow: hidden;
+}
+
+.card-foot {
+    background: chocolate;
+    color: white;
+    padding: 5px;
+    margin: 0;
+}
+
+.slider-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.slider-controls button {
+    padding: 5px 10px;
+    background: chocolate;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-177px);
+    }
+}
+
+
+.most-popular{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.most-popular h1{
+    align-self: center;
+    margin-bottom: 10px;
+    color: chocolate;
+}
+
+.most-popular-int-h2{
+    color: white;
+    align-self: center;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.elect-head{
+    width: 100vw;
+    /* align-self: center; */
+    display: flex;
+    color: white;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+footer{
+    row-gap: 20px;
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+    color: white;
+    background-color: black;
+    padding: 10px;
+}
+
+.info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.media{
+    display: flex;
+    gap: 10px;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-img {
+    overflow: hidden;
+}
+
+#hamburger{
+    cursor: pointer;
+}
+
+.cart{
+    cursor: pointer;
+}
+
+.news{
+    overflow: hidden;
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    width: 100vw;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.news-in{
+    max-width: 350px;
+    cursor: pointer;
+    background: black;
+}
+
+.news-in img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.news-desc{
+    color: chocolate;
+    padding: 5px;
+}
+
+.back{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+
+
+
+.bass{
+    display: none;
+    row-gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.electric{
+    display: none;
+    /* height: 100vh; */
+    width: 100vw;
+    row-gap: 20px;
+    /* row-gap: 10px; */
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom:30px;
+}
+
+.card-foot span{
+    float: right;
+    color: black;
+}
+
+.acoustic{
+    display: none;
+    row-gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.ele{
+    width: 100vw;
+    padding-left: 10px;
+}
+
+.view-guitar{
+    display: none;
+}
+
+.view-outer{
+    padding: 5px;
+    /* width: 370px; */
+    display: flex;
+    flex-direction: column;
+}
+
+.view-back{
+    margin-left: 20px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.view-img{
+    transform: rotate(90deg);
+    object-fit: contain;
+    height: 350px;
+}
+
+.view-text{
+    padding-left: 30px;
+}
+.view-text h1{
+    color: chocolate;
+    margin-bottom: 10px;
+}
+
+.view-text h3{
+    color: white;
+    margin-bottom: 10px;
+}
+
+.view-text p{
+    color: white;
+    margin-bottom: 10px;
+}
+
+.view-text button{
+    width: 200px;
+    border: none;
+    height: 48px;
+    color: white;
+    background: chocolate;
+    font-size: 20px;
+    margin-bottom: 20px;
+    cursor: pointer ;
+}
+
+.flex{
+    display: flex;
+}
+
+
+.home{
+    display: block;
+}
+
+.about-guit{
+    display: none;
+    flex-direction: column;
+    color: wheat;
+
+}
+
+.cart-img{
+    width: 100%;
+}
+
+.cart-inner{
+    padding: 10px;
+    max-width: 350px;
+    color: white;
+    margin-top: 20px;
+}
+
+
+
+
+.cart-bag{
+    display: none;
+    flex-wrap: wrap;
+}
+
+
+
+
+.cart-inner h1{
+    margin-bottom: 10px;
+}
+
+.cart-inner button{
+    width: 200px;
+    height: 48px;
+    background: chocolate;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+
+.cart-inner p{
+    margin-bottom: 10px;
+}
+
+
+.about-guit img{
+    max-width: 300px;
+}
+
+.about-guit div{
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+@media (min-width: 768px){
+    footer{
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+
+    .about-guit div{
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .nav{
+        display: flex;
+        padding-right: 30px;
+    }
+
+    .nav p{
+        font-size: 20px;
+    }
+
+
+    .view-outer{
+        flex-direction:row;
+        justify-content: space-around;
+    }
+
+    .view-text{
+        width: 50%;
+    }
+
+    .view-img{
+        margin-left: 40px;
+    }
+}
